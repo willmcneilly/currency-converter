@@ -4,16 +4,18 @@
 		<meta charset="utf-8">
 		<title>Electron boilerplate</title>
 		<link rel="stylesheet" href="index.css">
-		<link rel="import" href="./components/message-label.html">
-		<link rel="import" href="./components/proto-element.html">
+		<link rel="import" href="./components/currency-app.html">
+		<link rel="import" href="./components/top-bar.html">
 	</head>
 	<body>
-		<div class="container">
-			<header>
-				<proto-element></proto-element>
-			</header>
-			<section class="main"></section>
-			<footer></footer>
-		</div>
+		<currency-app>
+			<top-bar title="Currency Converter"></top-bar>
+			<currency-node>
+				<input is="super-input"/>
+			</currency-node>
+			<currency-node>
+				<input is="super-input"/>
+			</currency-node>
+		</currency-app>
 	</body>
 </html>
